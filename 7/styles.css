@@ -1,0 +1,132 @@
+:root {
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+body,
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	background-color: #f8ffff;
+}
+
+.header {
+	padding: 40px 60px;
+}
+
+.header .header_wrapper {
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+}
+
+.header .header_menu {
+	font-weight: 600;
+	transform: rotate(90deg);
+	font-size: 22px;
+}
+
+.header .header_title {
+	font-weight: 300;
+}
+
+.gallery {
+	background-color: #ecf0f1;
+	padding: 40px;
+}
+.gallery_wrapper,
+.content {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.gallery_wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+}
+
+.gallery .gallery_item {
+	height: 25vh;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.gallery .gallery_item:first-child {
+	background-image: url(https://i.pinimg.com/564x/25/9f/db/259fdb4eda02347156661f0ba121bfd3.jpg);
+}
+
+.gallery .gallery_item:nth-child(2) {
+	background-image: url(https://i.pinimg.com/564x/cd/b0/e0/cdb0e0d6891768cdf60513e9d48d3863.jpg);
+}
+
+.gallery .gallery_item:last-child {
+	background-image: url(https://i.pinimg.com/564x/b3/50/96/b35096dbaf2d6fe8671f0f1059819b71.jpg);
+}
+
+.content {
+	margin-top: 50px;
+	padding: 0 40px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+}
+
+.content .content_title {
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.content .content_description {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+}
+
+.content .content_column {
+	display: grid;
+	grid-gap: 30px;
+}
+
+.content .content_datalist {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0;
+	list-style: none;
+	margin: 30px 0px;
+}
+
+.content_datalist .datalist_name {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.content_datalist .datalist_value {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.content .content_link {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: inherit;
+	font-weight: 600;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #3498db;
+}
